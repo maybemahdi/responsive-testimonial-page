@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    min-width: 1280px;
+    background-color: #FAFAF9;
+    font-family: 'Sora', sans-serif;
+}
+
+.container {
+    width: 90%;
+    height: calc(100vh - 200px);
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left,
+.right {
+    flex-basis: 50%;
+}
+
+.circle img {
+    background-color: #F5C044;
+    padding: 14px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.left h1 {
+    color: #18181B;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.left h3 {
+    width: 80%;
+    color: #52525A;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    position: relative;
+    top: 5px;
+    left: 1px;
+}
+
+.left p {
+    color: #52525A;
+    font-size: 14px;
+}
+
+.right {
+    margin: 10px 0;
+}
+
+.right .review {
+    width: 50%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 25px 35px;
+    box-shadow: 0 0 10px #ddd;
+}
+
+.img {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 10px;
+}
+
+.user {
+    width: 100px;
+}
+
+.right h2 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.right h3 {
+    font-size: 16px;
+    color: #52525A;
+    font-weight: 400;
+    line-height: 24px;
+    width: 100%;
+}
+
+.review1 {
+    margin-bottom: 45px;
+    position: relative;
+    left: 50%;
+}
+
+.review2 {
+    position: relative;
+    left: 20%;
+}
+
+
+/* Responsive for 640px */
+
+@media screen and (max-width:640px) {
+    body{
+        min-width: 640px;
+    }
+    .container {
+        flex-direction: column;
+        width: 90vw;
+        height: calc(100vh - 200px);
+        margin: 100px auto 0 auto;
+        gap: 100px;
+    }
+    .left h3 {
+        width: 95%;
+        color: #52525A;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    .right{
+        width: 100%;
+    }
+    .right .review {
+        width: 60%;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        padding: 25px 35px;
+        box-shadow: 0 0 10px #ddd;
+    }
+    .review1 {
+        margin-bottom: 45px;
+        position: relative;
+        left: 40%;
+    }
+    .review2 {
+        position: relative;
+        left: 0;
+        margin-bottom: 100px;
+    }
+}
